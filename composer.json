@@ -1,0 +1,51 @@
+{
+	"name": "typo3/dep-resolver",
+	"description": "Calculates order of an array by dependencies",
+	"keywords": ["typo3", "dependency", "ordering"],
+	"homepage": "https://typo3.org/",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "TYPO3 CMS Core Team",
+			"role": "Developer",
+			"homepage": "https://forge.typo3.org/projects/typo3cms-core"
+		},
+		{
+			"name": "The TYPO3 Community",
+			"role": "Contributor",
+			"homepage": "https://typo3.org/community/"
+		}
+	],
+	"support": {
+		"general": "https://typo3.org/support/",
+		"issues": "https://forge.typo3.org",
+		"irc": "irc://irc.freenode.net/#typo3-cms",
+		"news": "nntp://lists.typo3.org"
+	},
+	"config": {
+		"platform": {
+			"php": "7.0.0"
+		}
+	},
+	"require": {
+		"php": "^7.0"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^6.5"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\DependencyOrdering\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TYPO3\\DependencyOrdering\\Tests\\": "tests/"
+		}
+	}
+}
